@@ -1,6 +1,8 @@
 using Unity.Entities;
 using UnityEngine;
 
+// Forca o update mesmo nao tendo nada no metodo OnUpdate
+[AlwaysUpdateSystem]
 public class PlayerSystem : SystemBase {
 
     protected override void OnCreateForCompiler () {
